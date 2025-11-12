@@ -3,7 +3,6 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/main/**/config/
-!**/src/main/**/uploads/
 !**/src/test/**/target/
 
 ### STS ###
