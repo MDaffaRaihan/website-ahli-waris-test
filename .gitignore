@@ -3,7 +3,6 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/main/**/config/
-!**/src/main/**/uploads/
 !**/src/test/**/target/
 
 ### STS ###
@@ -16,6 +15,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+/uploads
 .idea
 *.iws
 *.iml
@@ -33,3 +33,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/uploads/
+/src/main/java/com/infinatum/web_ahli_waris/config/
