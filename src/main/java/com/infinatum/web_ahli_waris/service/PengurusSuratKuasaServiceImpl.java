@@ -3,7 +3,6 @@ package com.infinatum.web_ahli_waris.service;
 import com.infinatum.web_ahli_waris.models.PengurusSuratKuasa;
 import com.infinatum.web_ahli_waris.repository.PengurusSuratKuasaRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +12,10 @@ public class PengurusSuratKuasaServiceImpl implements PengurusSuratKuasaService{
 
     @Autowired
     private PengurusSuratKuasaRepo pengurusSuratKuasaRepo;
+
+    public PengurusSuratKuasaServiceImpl(PengurusSuratKuasaRepo pengurusSuratKuasaRepo) {
+        this.pengurusSuratKuasaRepo = pengurusSuratKuasaRepo;
+    }
 
     @Override
     public List<PengurusSuratKuasa> getAllPengurusSuratKuasa() {
